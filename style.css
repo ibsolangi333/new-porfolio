@@ -1,0 +1,567 @@
+body{
+    background-color: #111;
+    font-family: Arial rounded mt;
+    padding: 0;
+    margin: 0;
+    /* scroll-behavior: smooth; */
+}
+body::-webkit-scrollbar{
+    width: 11px;
+}
+body::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0.284);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #198754;
+    border-radius: 10px;    
+}
+
+/* javascript classe  */
+.change_nav_background{
+    background-color: #161616;  
+    box-shadow: 0px 0px 10px 0px black;
+    transition: 300ms;
+}
+
+
+
+/* bottom sections heading contaxt css */
+.first-heading-custom{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.443);
+}
+.snd-heading-custom{
+    color: white;
+}
+.bottom-animation-line{
+    width: 70px;
+    height: 5px;
+    background-color: #198754;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.inside-animated-div{
+    animation: line 4s infinite linear;
+}
+.inside-dots{
+    width: 5px;
+    height: 5px;
+    background-color: #161616; 
+}
+@keyframes line {
+    0%{
+        margin-left: -20px;
+        
+    }
+    100%{
+        margin-left: 80px;
+    }
+}
+
+
+
+/* navbar start */
+.home-container-custom{
+    height: auto;
+}
+.header-custom{
+    padding-top: 13px;
+    padding-bottom: 10px;
+}
+.home-logo-custom{
+    text-decoration: none;
+    color: #198754;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: showcard gothic;
+    padding-left: 10px;
+}
+.home-links-custom{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 50px;
+}
+.home-links-custom:hover{
+    color: #198754;
+}
+.navbar-social-links-custom{
+    color: white;
+    /* padding-top: 5px; */
+    margin-top: 3px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+.nav-btn{
+    background-color: #198754;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 5px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    margin-top: -5px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.navbar-links-bottom-line{
+    width: 70px; 
+    height: 3px;
+    background-color: #198754; 
+    margin-top: 30px;
+    /* margin-left: 35px; */
+    position: absolute;
+    transition: 300ms;
+}
+.toggle-div-out-custom{
+    display: none;
+}
+.toggle-lines-div-custom{
+    cursor: pointer;
+}
+.toggle-line-1-custom,
+.toggle-line-2-custom,
+.toggle-line-3-custom{
+    width: 20px;
+    height: 4px;
+    background-color: #198754;
+    margin: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.toggle-line-2-custom{
+    width: 30px;
+}
+.toggle-line-3-custom{
+    width: 25px;
+}
+.close-togle-icon-custom{
+    cursor: pointer;
+    display: none;
+}
+.close-toggle-line-1-custom,
+.close-toggle-line-2-custom{
+    width: 30px;
+    height: 4px;
+    background-color: #198754;
+    margin: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.close-toggle-line-1-custom{
+    transform: rotateZ(320deg);
+    
+}
+.close-toggle-line-2-custom{
+    transform: rotateZ(-320deg);
+    margin-top: -8px;
+
+}
+.togler-links-div-custom{
+    width: 200px;
+    height: auto;
+    background-color: #161616;
+    position: absolute;
+    margin-left: -190px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px 0 black;
+    transition: 200ms;
+    display: none;
+}
+.toggle-links-ul-custom{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.toggle-links-li-custom{
+    padding: 12px;
+    cursor: pointer;
+    color: white;
+    border-bottom: 1px solid #198754;
+}
+.toggle-links-li-custom:hover{
+    background-color: rgba(245, 245, 245, 0.189);
+}
+/* navbar end */
+
+
+
+/* home section start */
+.my-name-colum-custom{
+    color: white; 
+    margin-top: 100px;
+}
+.my-name-heading-custom{
+    font-size: 4rem;
+    color: white;
+}
+.profession-name-custom{
+    margin-top: 15px;
+    color: rgba(240, 240, 245, 0.564);
+}
+.home-button-div-custom{
+    margin-top: 25px;
+}
+.img-colum-custom{
+    padding-top: 50px;
+}
+.img-out-div-custom{    
+    background-color: #198754;
+    width: 280px;
+    height: 400px;
+    margin-left: 40px;
+    animation: me 2s infinite alternate linear;
+}
+@keyframes me {
+    from{
+        transform: rotateZ(2deg);
+    }
+    to{
+        transform: rotateZ(-2deg);
+    }
+}
+.img-out-div-2-custom{
+    background-color: #198754;
+    width: 280px;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: -40px;
+}
+.my-img-custom{
+    position: center;
+    width: 280px;
+    height: 400px;
+    margin-top: -20px;
+    margin-left: 20px;
+    box-shadow: 0 0 20px 0 black;
+    transition: 1s;
+    transform: rotateZ(5deg);
+    /* animation: me 2s infinite alternate linear; */
+}
+/* home section end */
+
+
+/* about section end */
+.about-img-out-div-custom{
+    background-color: rgba(255, 255, 255, 0.093);
+    /* background-color: #198754; */
+    width: 280px;
+    height: 400px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.about-img-custom{
+    box-shadow: 0 0 20px 0 black;
+    width: 280px;
+    height: 400px;
+}
+.about-question-custom{
+    color: #198754; 
+    font-size: 20px;
+}
+.about-heading-custom{
+    color: white;
+    margin-top: 15px;
+}
+.about-peragraph-custom{
+    color: rgba(255, 255, 255, 0.469);
+    margin-top: 15px;
+    padding-bottom: 20px;
+    border-bottom:1px solid rgba(255, 255, 255, 0.273);
+}
+.personal-data-out-div-custom{
+    display: flex;
+}
+.personal-data-div-custom{
+    width: 100%;
+    /* border: 1px solid red; */
+    /* display: flex; */
+}
+.heading-custom{
+    color: white;
+    font-size: 14px;
+}
+.data-custom{
+    color: rgba(255, 255, 255, 0.427);
+    padding-left: 10px;
+}
+.email{
+    color: #198754;
+}
+.inside-line-custom{
+    width: 50px;
+    height: 1px;
+    background-color: #198754;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+.about-social-links-custom{
+    color: white;
+    padding-top: 25px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+.fa-facebook-square:hover{
+    color: #198754;
+}
+.fa-twitter:hover{
+    color: #198754;
+}
+.fa-linkedin-in:hover{
+    color: #198754;
+}
+.fa-github:hover{
+    color: #198754;
+}
+.fa-instagram:hover{
+    color: #198754;
+}
+.services-heading-custom{
+    color: white;
+    font-size: 25px;
+}
+.my-services-out-div-custom{
+    background-color: #161616;
+    padding: 30px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border: 1px solid #198754;
+}
+.fa-home,
+.fa-shopping-cart,
+.fa-angular{
+    color: #198754;
+    font-size: 35px;
+}
+.service-name-custom{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.824);
+}
+.service-details-custom{
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 12px;
+}
+/* about section end */
+
+
+
+
+.resume-row-tittle-custom{
+    font-size: 25px;
+    color: white;
+}
+.decoration-line-custom{
+    width: 50px;
+    height: 1px; 
+    background-color: #198754;
+    margin-top: 17px;
+    margin-left: 5px;
+}
+
+.education-detail-div-custom{
+    border-left: 2px solid #198754;
+    background-color: #161616;
+    padding: 10px;
+    padding-left: 20px;
+    /* box-shadow: 0 0 20px 0 black; */
+}
+.detail-div-heading-custom{
+    color: white;
+    font-size: 20px;
+}
+.detail-div-snd-heading-custom{
+    color: rgba(255, 255, 255, 0.447);
+    font-size: 14px;
+}
+.skills-heading-custom{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.694);
+}
+.skills-percent-custom{
+    color: rgba(255, 255, 255, 0.694);
+    float: right;
+    margin-top: -35px;
+    font-size: 20px;
+}
+.empty-line-custom{
+    width: 100%;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.145);
+}
+.fill-line-custom{
+    background-color: #198754;
+    height: 10px;
+}
+.html{
+    width: 90%;
+}
+.css{
+    width: 90%;
+}
+.bootstrap{
+    width: 80%;
+}
+.scss{
+    width: 50%;
+}
+.javascript{
+    width: 70%;
+}
+.angular{
+    width: 60%;
+}
+
+
+
+
+
+/* portfolio section start */
+.portfolio-pages-links-custom{
+    list-style-type: none;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.622);
+    cursor: pointer;
+}
+#landingpagerow{
+    display: none;
+}
+#ecommercerow{
+    display: none;
+}
+#angularrow{
+    display: none;
+}
+.portfolio-img-out-div-custom{
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+}
+.portfolio-img-out-div-custom:hover .portfolio-hidden-div-custom{
+    opacity: 1;
+}
+.portfolio-img-custom{
+    height: 250px;
+}
+.portfolio-hidden-div-custom{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    margin-top: -250px;
+    opacity: 0;
+    transition: 500ms;
+    cursor: pointer;
+}
+.link-btn-custom{
+    height: 40px;
+    margin-top: 110px;
+}
+/* portfolio section end */
+
+
+/* contact section start */
+.about-colums-heading-custom{
+    color: white;
+    font-size: 25px;
+}
+.forms-custom{
+    color: rgba(255, 255, 255, 0.73);
+    background-color: #161616;
+    outline: none;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 1px 0 black;
+}
+.forms-custom ::placeholder{
+    color: rgba(255, 255, 255, 0.73);
+    font-size: 14px;
+}
+.forms-error{
+    color: red;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+}
+.contact-some-info-custom{
+    color: rgba(255, 255, 255, 0.708);
+    font-size: 15px;
+}
+.fa-id-card{
+    color: #198754;
+    font-size: 25px;
+    padding-right: 17px;
+    padding-top: 15px;
+    border-right: 2px solid red;
+    border-right: 1px solid rgba(255, 255, 255, 0.407);
+}
+.fa-location-arrow,
+.fa-phone,
+.fa-envelope{
+    color: #198754;
+    font-size: 25px;
+    padding-right: 20px;
+    padding-top: 15px;
+    border-right: 1px solid rgba(255, 255, 255, 0.407);
+}
+.contact-info-headings-custom{
+    font-size: 14px;
+    padding-top: 15px;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.708);
+    /* border: 1px solid yellow; */
+}
+.contact-inside-span-custom{
+    color: white;
+}
+/* contact section end */
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1108px){
+    .email{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 992px){
+    .link-ul-custom{
+        display: none;
+    }
+    .toggle-div-out-custom{
+        display: block;
+    }
+    .my-name-colum-custom{
+        margin-top: 0px;
+    }
+    .personal-data-out-div-custom{
+        display: block;
+    }
+    .about-img-out-div-custom{
+        margin-left: -40px;
+    }
+    .email{
+        font-size: 14px;
+    }
+    .education-detail-div-custom{
+        margin-top: 20px;
+    }
+    .contact-info-colume-custom{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+} 
+@media screen and (max-width: 455px){
+
+} 
+

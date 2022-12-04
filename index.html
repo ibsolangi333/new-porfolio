@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>M Ibrahim</title>
+
+    <!-- bootstrap css libraries -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+  <!-- font awesome link -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"
+      />
+
+  <!-- offline links -->
+  <link rel="stylesheet" href="E:\Portfolio\fontawesome-free-5.15.3-web/css/all.css">
+  <link rel="stylesheet" href="E:\Portfolio\css/bootstrap.css">
+
+   <!-- custom css link -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- aos link -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<!-- navbar start -->
+  <nav class="navbar navbar-expand-lg fixed-top header-custom" id="navbar_highlight">
+    <div class="container-fluid">
+      <a class="home-logo-custom" href="#">m-ibrahim</a>
+      <div>
+        <ul class="navbar-nav me-auto mb-lg-0 link-ul-custom">
+          <span class="navbar-links-bottom-line" id="navbar_links_bottonm_line"></span>
+          <li class="nav-item">
+            <a class="home-links-custom" id="home" href="#home-section">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="home-links-custom" id="about" href="#about-section">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="home-links-custom" id="resume" href="#resume-section">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="home-links-custom" id="portfolio" href="#portfolio-section">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="home-links-custom" id="contact" href="#contact-section">Contact</a>
+          </li>
+          
+          <li style="margin-left: 10px;">
+            <div class="d-flex">
+              <a href="https://www.facebook.com/profile.php?id=100022173588388">
+                <i class="fab fa-facebook-square navbar-social-links-custom"></i>
+              </a>
+              <a href="https://twitter.com/muhamma05017306">
+                <i class="fab fa-twitter navbar-social-links-custom"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/muhammad-ibrahim-007153244/">
+                <i class="fab fa-linkedin-in navbar-social-links-custom"></i>
+              </a>
+              <a href="https://github.com/ibsolangi333">
+                <i class="fab fa-github navbar-social-links-custom"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-instagram navbar-social-links-custom"></i>
+              </a>
+              <button class=" nav-btn">Download CV</button>
+            </div>
+          </li>
+        </ul>
+        <!-- navbar toggle start   -->
+        <div class="toggle-div-out-custom">
+          <div class="toggle-lines-div-custom" onclick="opentoggle()" id="open_toggle_id">
+            <div class="toggle-line-1-custom"></div>  
+            <div class="toggle-line-2-custom"></div>
+            <div class="toggle-line-3-custom"></div>
+          </div>
+          <div class="close-togle-icon-custom" onclick="closetoggle()" id="close_toggle_id">
+            <div class="close-toggle-line-1-custom"></div>
+            <div class="close-toggle-line-2-custom"></div>
+          </div>
+          <div class="togler-links-div-custom" id="toggle_links_div_id">
+            <ul class="toggle-links-ul-custom">
+              <a class="text-decoration-none" href="#home-section" onclick="togglelinksfun()">
+                <li class="toggle-links-li-custom">Home</li>
+              </a>
+              <a class="text-decoration-none" href="#about-section" onclick="togglelinksfun()">
+                <li class="toggle-links-li-custom">About</li>
+              </a>
+              <a class="text-decoration-none" href="#resume-section" onclick="togglelinksfun()">
+                <li class="toggle-links-li-custom">Resume</li>
+              </a>
+              <a class="text-decoration-none" href="#portfolio-section" onclick="togglelinksfun()">
+                <li class="toggle-links-li-custom">Portfolio</li>
+              </a>
+              <a class="text-decoration-none" href="#contact-section" onclick="togglelinksfun()">
+                <li class="toggle-links-li-custom">Contact</li>
+              </a>
+              <li class="toggle-links-li-custom">
+                <div class="d-flex">
+                  <a href="">
+                    <i class="fab fa-facebook-square navbar-social-links-custom"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-twitter navbar-social-links-custom"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-linkedin-in navbar-social-links-custom"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-github navbar-social-links-custom"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-instagram navbar-social-links-custom"></i>
+                  </a>
+                </div>
+              </li>
+              <li class="toggle-links-li-custom" style="border: none;">
+                  <button class="btn btn-success">Download CV</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- navbar toggle end-->
+      </div>
+    </div>
+  </nav>
+<!-- navbar end -->
+
+
+<!-- home section start -->
+	<div class="container-fluid home-container-custom" id="home-section" 
+  data-aos="fade-left">
+    <div class="row" style="margin-top: 70px; padding-bottom: 100px;">
+      <div class="d-flex justify-content-center offset-lg-1 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-name-colum-custom">
+        <div class="my-name-out-div-custom">
+          <h1 class="my-name-heading-custom">
+            <span style="color: #198754; font-size: 30px;">Hi I'm</span><br>
+            Muhammad Ibrahim
+          </h1>
+          <h1 class="profession-name-custom"> 
+            Front End Developer
+          </h1>
+          <div class="home-button-div-custom">
+            <button class="btn btn-success">Hire Me</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 d-flex justify-content-center img-colum-custom">
+        <div class="img-out-div-custom">
+          <div class="img-out-div-2-custom">
+            <img class="my-img-custom" src="home.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- home section end -->
+
+
+<!-- about section start  -->
+<div class="container-fluid mt-5 pb-5" id="about-section" >    
+  <div class="d-flex justify-content-center text-center" data-aos="fade-right">
+      <div>
+        <h1 class="first-heading-custom">Get to know me</h1>
+        <h1 class="snd-heading-custom">About Me</h1>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center" data-aos="fade-right">
+      <div class="bottom-animation-line">
+        <div class="inside-animated-div d-flex">
+          <span class="inside-dots"></span>
+          <span class="inside-dots" style="margin-left: 5px;"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4" data-aos="fade-right">
+      <div class="col-lg-5 p-5 d-flex justify-content-center">
+        <div class="about-img-out-div-custom">
+          <img src="about.jpg" class="about-img-custom"alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-5" data-aos="fade-right">
+        <span class="about-question-custom">Who am i?</span>
+        <h1 class="about-heading-custom">
+          I'm Muhammad Ibrahim, a Front End Developer 
+        </h1>
+        <p class="about-peragraph-custom">
+          I am front end developer and i have been working
+          for minimum three years on my skills.
+          I consider my self a responsible and orderly person.
+          I am looking foward for my first work experience.
+        </p>
+        <div class="personal-data-out-div-custom mt-4">
+          <div class="personal-data-div-custom d-flex">
+            <h1 class="heading-custom">Name:
+              <span class="data-custom">Muhammad Ibrahim</span>
+            </h1>
+          </div>
+          <div class="personal-data-div-custom d-flex">
+            <h1 class="heading-custom">Email:
+              <span class="data-custom email">ibsolangi444@gmail.com</span>
+            </h1>
+          </div>
+        </div>
+        <div class="personal-data-out-div-custom">
+          <div class="personal-data-div-custom d-flex">
+            <h1 class="heading-custom">Age:
+              <span class="data-custom">20</span>
+            </h1>
+          </div>
+          <div class="personal-data-div-custom d-flex">
+            <h1 class="heading-custom">From:
+              <span class="data-custom">Pakistan,Sindh</span>
+            </h1>
+          </div>
+        </div>
+        
+        <div class="d-flex">
+          <button class="btn btn-success mt-3">Download CV</button>
+          <span class="inside-line-custom"></span>
+          <div class="d-flex">
+            <a href="">
+              <i class="fab fa-facebook-square about-social-links-custom"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-twitter about-social-links-custom"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-linkedin-in about-social-links-custom"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-github about-social-links-custom"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-instagram about-social-links-custom"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- about service start -->
+  <div class="container pb-5" data-aos="fade-left">
+    <div class="d-flex">
+      <h1 class="services-heading-custom">My Services</h1>
+    <span class="decoration-line-custom"></span>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mt-3">
+        <div class="my-services-out-div-custom">
+          <i class="fa fa-home"></i>
+          <h1 class="mt-3 service-name-custom">Landing Page Websites</h1>
+          <p class="mt-3 service-details-custom">
+            lorem ipsum dolar site
+            lorem ipsum dolar site
+            lorem ipsum dolar site
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-3">
+        <div class="my-services-out-div-custom">
+          <i class="fa fa-shopping-cart"></i>
+          <h1 class="mt-3 service-name-custom">E-Commerce</h1>
+          <p class="mt-3 service-details-custom">
+            lorem ipsum dolar site
+            lorem ipsum dolar site
+            lorem ipsum dolar site
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-3">
+        <div class="my-services-out-div-custom">
+          <i class="fab fa-angular"></i>
+          <h1 class="mt-3 service-name-custom">Angular Applications</h1>
+          <p class="mt-3 service-details-custom">
+            lorem ipsum dolar site
+            lorem ipsum dolar site
+            lorem ipsum dolar site
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about service start -->
+<!-- about section end -->
+
+
+<!-- resume section start -->
+    <div class="container mt-5 pb-5" id="resume-section">
+      <div class="d-flex justify-content-center text-center" data-aos="fade-right">
+        <div>
+          <h1 class="first-heading-custom">Check out my Resume</h1>
+          <h1 class="snd-heading-custom">Resume</h1>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center" data-aos="fade-right">
+        <div class="bottom-animation-line">
+          <div class="inside-animated-div d-flex">
+            <span class="inside-dots"></span>
+            <span class="inside-dots" style="margin-left: 5px;"></span>
+          </div>
+        </div>
+      </div>
+      <!-- resume education start -->
+      <div class="row mt-5 resume-row-custom" data-aos="fade-right">
+        <div class="d-flex">
+          <h1 class="resume-row-tittle-custom">Education</h1>
+          <span class="decoration-line-custom"></span>
+        </div>
+        <div class="col-lg-6 mt-3">
+          <div class="education-detail-div-custom">
+            <h1 class="detail-div-heading-custom">Metric</h1>
+            <h1 class="detail-div-snd-heading-custom">March 2020</h1>
+            <h1 class="detail-div-snd-heading-custom">Government High School Moro Town Campus</h1>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-3">
+          <div class="education-detail-div-custom">
+            <h1 class="detail-div-heading-custom">Entermediate</h1>
+            <h1 class="detail-div-snd-heading-custom">April 2022</h1>
+            <h1 class="detail-div-snd-heading-custom">Government Degree Collage Moro Town Campus</h1>
+          </div>
+        </div>
+      </div>
+      <!-- resume education end -->
+      <!-- resume skills start -->
+      <div class="row mt-5" data-aos="fade-left">
+        <div class="d-flex">
+          <h1 class="resume-row-tittle-custom">My Skills</h1>
+          <span class="decoration-line-custom"></span>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="mt-4">
+              <h1 class="skills-heading-custom">HTML</h1>
+              <span class="skills-percent-custom">90%</span>
+              <div class="empty-line-custom">
+                <div class="fill-line-custom html"></div>
+              </div>
+          </div>
+          <div class="mt-5">
+            <h1 class="skills-heading-custom">CSS</h1>
+            <span class="skills-percent-custom">90%</span>
+            <div class="empty-line-custom">
+              <div class="fill-line-custom css"></div>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h1 class="skills-heading-custom">Bootstrap</h1>
+            <span class="skills-percent-custom">80%</span>
+            <div class="empty-line-custom">
+              <div class="fill-line-custom bootstrap"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="mt-4">
+            <h1 class="skills-heading-custom">SCSS</h1>
+            <span class="skills-percent-custom">50%</span>
+            <div class="empty-line-custom">
+              <div class="fill-line-custom scss"></div>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h1 class="skills-heading-custom">JAVASCRIPT</h1>
+            <span class="skills-percent-custom">70%</span>
+            <div class="empty-line-custom">
+              <div class="fill-line-custom javascript"></div>
+            </div>
+          </div>
+          <div class="mt-5">
+            <h1 class="skills-heading-custom">ANGULAR</h1>
+            <span class="skills-percent-custom">60%</span>
+            <div class="empty-line-custom">
+              <div class="fill-line-custom angular"></div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <!-- resume skills end -->
+    </div>
+  <!-- resume section end -->
+
+
+<!-- portfolio section start  -->
+  <div class="container mt-5 pb-5" id="portfolio-section">
+    <div class="d-flex justify-content-center text-center" data-aos="fade-right">
+      <div>
+        <h1 class="first-heading-custom">Showcasing some of my best work</h1>
+        <h1 class="snd-heading-custom">Portfolio</h1>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center" data-aos="fade-right">
+      <div class="bottom-animation-line">
+        <div class="inside-animated-div d-flex">
+          <span class="inside-dots"></span>
+          <span class="inside-dots" style="margin-left: 5px;"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt-5" data-aos="fade-left">
+      <ul class="d-flex">
+        <li class="portfolio-pages-links-custom" onclick="allfun()" id="all"
+        style="color: #198754;">All</li>
+        <li class="portfolio-pages-links-custom" onclick="landingpagefun()" 
+        id="landingpage">Landing Page</li>
+        <li class="portfolio-pages-links-custom" onclick="ecommercefun()"
+        id="ecommerce">E-commerce</li>
+        <li class="portfolio-pages-links-custom" onclick="angularfun()"
+        id="angular">Angular</li>
+      </ul>
+    </div>
+
+
+    <div class="container" id="allrow" data-aos="fade-left">
+      <div class="row">
+        <div class="col-lg-4 mt-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="angular.png" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="#" class="btn btn-success link-btn-custom">Go live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="landing-1.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom">Go live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="ecomerce-1.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom" onclick="linkunable()">Go live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="ecomerce-2.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom" onclick="linkunable()">Go live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="landing-2.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom" onclick="linkunable()">Go live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="landing-3.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom" onclick="linkunable()">Go live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="ecomerce-3.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom" onclick="linkunable()">Go live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="landing-4.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom" onclick="linkunable()">Go live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="landing-5.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom" onclick="linkunable()">Go live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <div class="container" id="landingpagerow" data-aos="fade-left">
+      <div class="row">
+        <div class="col-lg-4 mt-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="landing-1.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom">Go live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="landing-2.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom" onclick="linkunable()">Go live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="landing-3.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom" onclick="linkunable()">Go live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="landing-4.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom" onclick="linkunable()">Go live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="landing-5.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom" onclick="linkunable()">Go live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="ecommercerow" data-aos="fade-left">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="ecomerce-1.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom" onclick="linkunable()">Go live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="ecomerce-2.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom" onclick="linkunable()">Go live</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="ecomerce-3.PNG" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom" onclick="linkunable()">Go live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container">
+      <div class="row" id="angularrow">
+        <div class="col-lg-4">
+          <div class="portfolio-img-out-div-custom">
+            <img src="angular.png" class="w-100 portfolio-img-custom" alt="">
+            <div class="d-flex justify-content-center portfolio-hidden-div-custom">
+                <a href="" class="btn btn-success link-btn-custom">Go live</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- portfolio section end  -->
+
+
+
+
+<!-- contact section start -->
+<div class="container mt-5 pb-5" id="contact-section">
+  <div class="d-flex justify-content-center text-center">
+    <div>
+      <h1 class="first-heading-custom">Feel free to contact me anytime</h1>
+      <h1 class="snd-heading-custom">Get in Touch</h1>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div class="bottom-animation-line">
+      <div class="inside-animated-div d-flex">
+        <span class="inside-dots"></span>
+        <span class="inside-dots" style="margin-left: 5px;"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-lg-8">
+      <div class="d-flex">
+        <h1 class="about-colums-heading-custom">Message Me</h1>
+      <span class="decoration-line-custom"></span>
+      </div>
+        <div class="row">
+          <div class="col-lg-6 mt-4">
+            <input type="text" placeholder="Name" class="w-100 forms-custom" id="name">
+            <h1 class="forms-error" id="name_error">**Please enter value</h1>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <input type="text" placeholder="Email" class="w-100 forms-custom" id="email">
+            <h1 class="forms-error" id="email_error">**Please enter value</h1>
+          </div>
+          <div class="col-lg-12 mt-4">
+            <input type="text" placeholder="Subject" class="w-100 forms-custom" id="subject">
+            <h1 class="forms-error" id="subject_error">**Please enter value</h1>
+          </div>
+          <div class="col-lg-12 mt-4">
+            <textarea class="w-100 forms-custom pb-5" placeholder="Message" id="message"></textarea>
+            <h1 class="forms-error" id="message_error">**Please enter value</h1>
+          </div>
+        </div>  
+        <button class="btn btn-success mt-3" onclick="submite()">Send Message</button>    
+    </div>
+    <div class="col-lg-4 contact-info-colume-custom">
+      <div class="d-flex">
+        <h1 class="about-colums-heading-custom">Contact Info</h1>
+        <span class="decoration-line-custom"></span>
+      </div>
+      <p class="contact-some-info-custom mt-4">
+        Always available for you, Feel free to contact me!
+      </p>
+      <div class="d-flex">
+        <i class="fa fa-id-card" aria-hidden="true"></i>
+        <h1 class="contact-info-headings-custom">
+          <span class="contact-inside-span-custom">Name</span>
+          <br>Muhammad Ibrahim
+        </h1>
+      </div>
+      <div class="d-flex">
+        <i class="fas fa-location-arrow"></i>
+        <h1 class="contact-info-headings-custom">
+          <span class="contact-inside-span-custom">Location</span>
+          <br>Moro, Sindh, Pakistan
+        </h1>
+      </div>
+      <div class="d-flex">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <h1 class="contact-info-headings-custom">
+          <span class="contact-inside-span-custom">Call Me</span>
+          <br>+923081452651
+        </h1>
+      </div>
+      <div class="d-flex">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <h1 class="contact-info-headings-custom">
+          <span class="contact-inside-span-custom">Email Me</span>
+          <br>ibsolangi444@gmail.com
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contact section end -->
+
+
+
+
+<!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!-- javascript global link -->
+  <script src="javascript.js"></script>
+  <!-- aos link -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+  AOS.init({ offset: 200,});
+</script>
+</body>
+</html>
