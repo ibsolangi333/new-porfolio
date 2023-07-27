@@ -84,52 +84,34 @@ window.addEventListener("scroll", function(){
 // porfoilio sectio start
   var all = document.getElementById('all');
   var landingpage = document.getElementById('landingpage');
-  var ecomerced = document.getElementById('ecommerce');
   var angular = document.getElementById('angular');
 
   var allrow = document.getElementById('allrow');
   var landingpagerow = document.getElementById('landingpagerow');
-  var ecommercerow = document.getElementById('ecommercerow');
   var angularrow = document.getElementById('angularrow');
 
   function allfun() {
     all.style.color ="#198754";
     landingpage.style.color ="";
-    ecomerced.style.color ="";
     angular.style.color ="";
     allrow.style.display ="block";
     landingpagerow.style.display ="none";
-    ecommercerow.style.display ="none";
     angularrow.style.display ="none";
   }
   function landingpagefun() {
     all.style.color ="";
     landingpage.style.color ="#198754";
-    ecomerced.style.color ="";
     angular.style.color ="";
     allrow.style.display ="none";
     landingpagerow.style.display ="block";
-    ecommercerow.style.display ="none";
-    angularrow.style.display ="none";
-  }
-  function ecommercefun() {
-    all.style.color ="";
-    landingpage.style.color ="";
-    ecomerced.style.color ="#198754";
-    angular.style.color ="";
-    allrow.style.display ="none";
-    landingpagerow.style.display ="none";
-    ecommercerow.style.display ="block";
     angularrow.style.display ="none";
   }
   function angularfun() {
     all.style.color ="";
     landingpage.style.color ="";
-    ecomerced.style.color ="";
     angular.style.color ="#198754";
     allrow.style.display ="none";
     landingpagerow.style.display ="none";
-    ecommercerow.style.display ="none";
     angularrow.style.display ="block";
   }
 

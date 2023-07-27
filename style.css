@@ -328,8 +328,8 @@ body::-webkit-scrollbar-thumb{
     padding-right: 20px;
     border: 1px solid #198754;
 }
-.fa-home,
-.fa-shopping-cart,
+.fa-code,
+.fa-desktop,
 .fa-angular{
     color: #198754;
     font-size: 35px;
@@ -402,14 +402,14 @@ body::-webkit-scrollbar-thumb{
 .bootstrap{
     width: 80%;
 }
-.scss{
-    width: 50%;
-}
 .javascript{
     width: 70%;
 }
 .angular{
     width: 60%;
+}
+.git{
+    width: 50%;
 }
 
 
